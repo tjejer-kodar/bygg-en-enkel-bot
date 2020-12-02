@@ -1,3 +1,6 @@
+// Den här filen är bara till för att testa så att dina
+// funktioner fungerar som de ska, men tjuvkika gärna!
+
 import {
     isItSaturdayToday,
     daysUntil

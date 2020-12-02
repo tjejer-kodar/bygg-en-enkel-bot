@@ -1,3 +1,6 @@
+// Den här filen är bara till för att visa rätt
+// resultat på testerna, men tjuvkika gärna!
+
 import {isItSaturdayToday, daysUntil} from '../saturday.js';
 
 const date = new Date();
