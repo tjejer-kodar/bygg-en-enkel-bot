@@ -13,8 +13,7 @@ if (isItSaturdayToday(date) === undefined && daysUntil(date) === undefined) {
   if (isItSaturdayToday(date) && daysUntil(date) === 0) {
     document.querySelector(".result-row").innerHTML = "Ja, det är lördag idag!";
   } else {
-    document.querySelector(".result-row").innerHTML =
-      "Nej, det är inte lördag idag, det är &nbsp;<u>" +
+    document.querySelector(".result-row").innerHTML = "Nej, det är inte lördag idag, det är &nbsp;<u>" +
       daysUntil(date) +
       "</u>&nbsp; dagar kvar.";
   }
