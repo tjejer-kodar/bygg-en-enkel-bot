@@ -20,15 +20,6 @@ if (isItSaturdayToday(date) === undefined && daysUntil(date) === undefined) {
   }
 }
 
-// const d = new Date();
-// const n = d.getDay();
-// let mess = document.querySelector("#message");
-
-// if (n === 3) {
-//   mess.innerText = "Hej Onsdag";
-// }
-// console.log(n);
-
 document.querySelectorAll("button").forEach((btn) =>
   btn.addEventListener("mousedown", function (e) {
     gsap.to(btn, { duration: 0.1, scale: 0.9 });
