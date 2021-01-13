@@ -18,3 +18,5 @@ const isItSaturdayToday = (date) => {
     daysUntil
   }
   
+
+  // hej 
