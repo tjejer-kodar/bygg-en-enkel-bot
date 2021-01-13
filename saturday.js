@@ -4,8 +4,9 @@ const isItSaturdayToday = (date) => {
     return true; 
   }
     return false; 
-   }
+  }
   
+   
   
   const daysUntil = (date) => {
     const today = date.getDay(); 
@@ -18,5 +19,4 @@ const isItSaturdayToday = (date) => {
     daysUntil
   }
   
-
-  // hej 
+ 
