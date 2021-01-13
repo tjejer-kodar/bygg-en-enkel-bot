@@ -1,26 +1,46 @@
 // Den här filen är bara till för att visa rätt
 // resultat på testerna, men tjuvkika gärna!
 
-import {isItSaturdayToday, daysUntil} from '../saturday.js';
+import { isItSaturdayToday, daysUntil } from "../saturday.js";
 
 const date = new Date();
 
 if (isItSaturdayToday(date) === undefined && daysUntil(date) === undefined) {
-  document.querySelector('.result-row').innerHTML = 'Gör ändringar i filen saturday.js';
-  document.getElementById('button-container').style.display = 'none';
+  document.querySelector(".result-row").innerHTML =
+    "Gör ändringar i filen saturday.js";
+  document.getElementById("button-container").style.display = "none";
 } else {
   if (isItSaturdayToday(date) && daysUntil(date) === 0) {
-    document.querySelector('.result-row').innerHTML = 'Ja, det är lördag idag!';
+    document.querySelector(".result-row").innerHTML = "Ja, det är lördag idag!";
   } else {
-    document.querySelector('.result-row').innerHTML = 'Nej, det är inte lördag idag, det är &nbsp;<u>' + daysUntil(date) + '</u>&nbsp; dagar kvar.';
+    document.querySelector(".result-row").innerHTML =
+      "Nej, det är inte lördag idag, det är &nbsp;<u>" +
+      daysUntil(date) +
+      "</u>&nbsp; dagar kvar.";
   }
 }
 
+// const d = new Date();
+// const n = d.getDay();
+// let mess = document.querySelector("#message");
 
-document.querySelectorAll('button').forEach((btn) => btn.addEventListener('mousedown', function(e) {
-  gsap.to(btn, { duration: 0.1, scale: 0.9 });
-}));
+// if (n === 3) {
+//   mess.innerText = "Hej Onsdag";
+// }
+// console.log(n);
 
-document.querySelectorAll('button').forEach((btn) => btn.addEventListener('mouseup', function(e) {
-  gsap.to(btn, { duration: 0.5, scale: 1, ease: Elastic.easeOut.config(1, 0.2) });
-}));
+document.querySelectorAll("button").forEach((btn) =>
+  btn.addEventListener("mousedown", function (e) {
+    gsap.to(btn, { duration: 0.1, scale: 0.9 });
+  })
+);
+
+document.querySelectorAll("button").forEach((btn) =>
+  btn.addEventListener("mouseup", function (e) {
+    gsap.to(btn, {
+      duration: 0.5,
+      scale: 1,
+      ease: Elastic.easeOut.config(1, 0.2),
+    });
+  })
+);
