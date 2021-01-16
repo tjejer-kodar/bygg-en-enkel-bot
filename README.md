@@ -1,3 +1,6 @@
 # Bygg-en-enkel-bot
 
-Gå in i `saturday.js` för att hitta uppgiften!
+How many days are left until Saturday? Or is it Saturday today?
+* Download as a zip file
+* Open in Visual Studio Code or other tool
+* Run http-server
