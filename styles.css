@@ -19,7 +19,8 @@ body {
 
 .container {
     height: 100vh;
-    background-color: #00427a;
+    background-color: #7a0066;
+    background: linear-gradient(#7a0066, #45408f);
 }
 
 .wrapper {
@@ -36,6 +37,14 @@ body {
     min-height: 57px;
     margin-bottom: 12px;
 }
+
+.saturday-txt {
+    font-size: 3rem;
+}
+/* 
+.result-row2:hover {
+    font-size: 3rem;
+} */
 
 .error-span {
     color: red;
